@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>IMGedu</title>
+  <meta name="description" content="Material de apoio aos usuário da biblioteca de processamento de imagens digitais orbitais, cujo objetivo principal é o auxílio no aprendizado das funções aqui contidas.">
+  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
+
+  <meta property="og:title" content="IMGedu" />
+  <meta property="og:type" content="book" />
+
+
+  <meta property="og:description" content="Material de apoio aos usuário da biblioteca de processamento de imagens digitais orbitais, cujo objetivo principal é o auxílio no aprendizado das funções aqui contidas." />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="IMGedu" />
+
+  <meta name="twitter:description" content="Material de apoio aos usuário da biblioteca de processamento de imagens digitais orbitais, cujo objetivo principal é o auxílio no aprendizado das funções aqui contidas." />
+
+
+<meta name="author" content="Bruno Menini Matosak, Nilcilene das Graças Medeiros">
+
+
+<meta name="date" content="2018-08-27">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+
+<link rel="prev" href="filtragem.html">
+<link rel="next" href="limiarizacao.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">IMGedu</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Prefácio</a></li>
+<li class="chapter" data-level="1" data-path="introducao.html"><a href="introducao.html"><i class="fa fa-check"></i><b>1</b> Introdução</a><ul>
+<li class="chapter" data-level="1.1" data-path="introducao.html"><a href="introducao.html#imagem-digital"><i class="fa fa-check"></i><b>1.1</b> Imagem Digital</a></li>
+<li class="chapter" data-level="1.2" data-path="introducao.html"><a href="introducao.html#processamento-de-imagens-digitais-pdi"><i class="fa fa-check"></i><b>1.2</b> Processamento de Imagens Digitais (PDI)</a></li>
+<li class="chapter" data-level="1.3" data-path="introducao.html"><a href="introducao.html#julia-language"><i class="fa fa-check"></i><b>1.3</b> Julia Language</a></li>
+<li class="chapter" data-level="1.4" data-path="introducao.html"><a href="introducao.html#exercicios"><i class="fa fa-check"></i><b>1.4</b> Exercícios</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="filtragem.html"><a href="filtragem.html"><i class="fa fa-check"></i><b>2</b> Filtragem</a><ul>
+<li class="chapter" data-level="2.1" data-path="filtragem.html"><a href="filtragem.html#convolucao"><i class="fa fa-check"></i><b>2.1</b> Convolução</a></li>
+<li class="chapter" data-level="2.2" data-path="filtragem.html"><a href="filtragem.html#filtros-passa-baixa"><i class="fa fa-check"></i><b>2.2</b> Filtros Passa-Baixa</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="filtragem.html"><a href="filtragem.html#filtro-de-media"><i class="fa fa-check"></i><b>2.2.1</b> Filtro de Média</a></li>
+<li class="chapter" data-level="2.2.2" data-path="filtragem.html"><a href="filtragem.html#filtro-da-mediana"><i class="fa fa-check"></i><b>2.2.2</b> Filtro da Mediana</a></li>
+<li class="chapter" data-level="2.2.3" data-path="filtragem.html"><a href="filtragem.html#filtro-gaussiano"><i class="fa fa-check"></i><b>2.2.3</b> Filtro Gaussiano</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="filtragem.html"><a href="filtragem.html#filtros-passa-alta"><i class="fa fa-check"></i><b>2.3</b> Filtros Passa-Alta</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="filtragem.html"><a href="filtragem.html#operador-de-sobel"><i class="fa fa-check"></i><b>2.3.1</b> Operador de Sobel</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="filtragem.html"><a href="filtragem.html#filtragem-adaptativa"><i class="fa fa-check"></i><b>2.4</b> Filtragem Adaptativa</a><ul>
+<li class="chapter" data-level="2.4.1" data-path="filtragem.html"><a href="filtragem.html#filtro-gaussiano-adaptativo"><i class="fa fa-check"></i><b>2.4.1</b> Filtro Gaussiano Adaptativo</a></li>
+</ul></li>
+<li class="chapter" data-level="2.5" data-path="filtragem.html"><a href="filtragem.html#exercicios-1"><i class="fa fa-check"></i><b>2.5</b> Exercícios</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="morfologia-matematica.html"><a href="morfologia-matematica.html"><i class="fa fa-check"></i><b>3</b> Morfologia Matemática</a><ul>
+<li class="chapter" data-level="3.1" data-path="morfologia-matematica.html"><a href="morfologia-matematica.html#erosao"><i class="fa fa-check"></i><b>3.1</b> Erosão</a></li>
+<li class="chapter" data-level="3.2" data-path="morfologia-matematica.html"><a href="morfologia-matematica.html#dilatacao"><i class="fa fa-check"></i><b>3.2</b> Dilatação</a></li>
+<li class="chapter" data-level="3.3" data-path="morfologia-matematica.html"><a href="morfologia-matematica.html#gradiente-morfologico"><i class="fa fa-check"></i><b>3.3</b> Gradiente Morfológico</a></li>
+<li class="chapter" data-level="3.4" data-path="morfologia-matematica.html"><a href="morfologia-matematica.html#afinamento-morfologico"><i class="fa fa-check"></i><b>3.4</b> Afinamento Morfológico</a></li>
+<li class="chapter" data-level="3.5" data-path="morfologia-matematica.html"><a href="morfologia-matematica.html#exercicios-2"><i class="fa fa-check"></i><b>3.5</b> Exercícios</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="limiarizacao.html"><a href="limiarizacao.html"><i class="fa fa-check"></i><b>4</b> Limiarização</a><ul>
+<li class="chapter" data-level="4.1" data-path="limiarizacao.html"><a href="limiarizacao.html#limiarizacao-pela-mediana"><i class="fa fa-check"></i><b>4.1</b> Limiarização pela Mediana</a></li>
+<li class="chapter" data-level="4.2" data-path="limiarizacao.html"><a href="limiarizacao.html#limiarizacao-de-otsu"><i class="fa fa-check"></i><b>4.2</b> Limiarização de Otsu</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">IMGedu</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="morfologia-matematica" class="section level1">
+<h1><span class="header-section-number">Capítulo 3</span> Morfologia Matemática</h1>
+<style>
+body {
+text-align: justify}
+</style>
+<p>Um tema muito estudado entre as técnicas de processamento de imagens é a morfologia matemática, que vêm apresentando resultados muito interessantes no preparo de fotografias para posterior análise.</p>
+<p>O princípio básico da morfologia matemática aplicada a imagens é a extração de informações relativas à geometria e topologia de conjuntos desconhecidos, a partir do elemento estruturante, também conhecido como máscara <span class="citation">(J. FACON <a href="#ref-falcon">2011</a>)</span>. Métodos como a erosão e a dilatação podem ser realizadas por máscaras de diferentes tamanhos, alterando a forma dos objetos da imagem. Combinando estes dois processos, obtêm-se ainda outros tantos como a abertura, fechamento, e etc.</p>
+<div id="erosao" class="section level2">
+<h2><span class="header-section-number">3.1</span> Erosão</h2>
+<p><span class="citation">(R. C. GONZALEZ <a href="#ref-gonzalez">2010</a>)</span> estabelece que a <em>Erosão</em> de A por B é definida como (Equação <a href="morfologia-matematica.html#eq:ero">(3.1)</a>):</p>
+<span class="math display" id="eq:ero">\[\begin{equation}
+A \ominus B = \{z|(B)_z \cap A^c = \varnothing\}
+\tag{3.1}
+\end{equation}\]</span>
+<p>Sendo A e B conjuntos de <span class="math inline">\(Z^2\)</span>.</p>
+<p>O efeito prático do processo morfológico chamado erosão consiste na modificação das feições da imagem, diminuindo-as em seu entorno, literalmente “erodindo-as”. Tal efeito pode ser alcançado através de um filtro, onde o menor valor dos pixel recobertos pela máscara assume o valor do pixel filtrado. Consiste basicamente de um <em>Filtro de Mínimo</em>. A Figura <a href="morfologia-matematica.html#fig:erosao">3.1</a> demonstra o efeito da <em>Erosão</em> em uma imagem sintética.</p>
+<center>
+<div class="figure"><span id="fig:erosao"></span>
+<img src="Imagens/exemplo_erosion.png" alt="Efeito alcançado pela aplicação do operador morfológico de *Erosão* em uma imagem. Imagem sintética original (a); e Imagem erodida (b)." width="80%" />
+<p class="caption">
+Figura 3.1: Efeito alcançado pela aplicação do operador morfológico de <em>Erosão</em> em uma imagem. Imagem sintética original (a); e Imagem erodida (b).
+</p>
+</div>
+</center>
+<p>Para uma melhor exemplificação dos efeitos de tal operador morfológico, na Figura <a href="morfologia-matematica.html#fig:erosaoorbit">3.2</a> é demonstrado o efeito desta ferramenta em uma imagem orbital. Nota-se que, apesar de pequeno, há um ligeiro aumento das áreas mais escuras pertencentes à cena.</p>
+<center>
+<div class="figure"><span id="fig:erosaoorbit"></span>
+<img src="Imagens/exemplo_erosion_orbit.png" alt="Efeito alcançado pela aplicação do operador morfológico de *Erosão* em uma imagem orbital de 1000 x 1000 pixels. Imagem orbital original (a); e Imagem erodida por máscara 3 x 3 (b)." width="100%" />
+<p class="caption">
+Figura 3.2: Efeito alcançado pela aplicação do operador morfológico de <em>Erosão</em> em uma imagem orbital de 1000 x 1000 pixels. Imagem orbital original (a); e Imagem erodida por máscara 3 x 3 (b).
+</p>
+</div>
+</center>
+<p>No âmbito desta biblioteca, tal operador pode ser aplicado através da função <em>erosion_( )</em>.</p>
+</div>
+<div id="dilatacao" class="section level2">
+<h2><span class="header-section-number">3.2</span> Dilatação</h2>
+<p>De forma semalhante à equação <a href="morfologia-matematica.html#eq:ero">(3.1)</a>, <span class="citation">(R. C. GONZALEZ <a href="#ref-gonzalez">2010</a>)</span> também estabelece que a <em>Dilatação</em> de um conjunto A por B é definida como (Equação <a href="morfologia-matematica.html#eq:dil">(3.2)</a>):</p>
+<span class="math display" id="eq:dil">\[\begin{equation}
+A \oplus B = \{z|(\hat{B})_z \cap A \neq \varnothing \}
+\tag{3.2}
+\end{equation}\]</span>
+<p>O efeito prático do processo morfológico chamado <em>Dilatação</em> consiste na modificação das feições da imagem, aumentando-as em seu entorno. O filtro implementado adota o menor valor dos pixel recobertos pela máscara como o novo valor do pixel filtrado. Consiste basicamente de um <em>Filtro de Máximo</em>. A Figura <a href="morfologia-matematica.html#fig:dilatacao">3.3</a> demonstra o efeito da <em>Dilatação</em> em uma imagem sintética.</p>
+<center>
+<div class="figure"><span id="fig:dilatacao"></span>
+<img src="Imagens/exemplo_dilation.png" alt="Efeito alcançado pela aplicação do operador morfológico de *Diltação* em uma imagem. Imagem sintética original (a); e Imagem dilatada (b)." width="80%" />
+<p class="caption">
+Figura 3.3: Efeito alcançado pela aplicação do operador morfológico de <em>Diltação</em> em uma imagem. Imagem sintética original (a); e Imagem dilatada (b).
+</p>
+</div>
+</center>
+<p>O efeito da <em>Dilatação</em> pode ser visto também na Figura <a href="morfologia-matematica.html#fig:dilatacaoorbit">3.4</a>, onde tal operador morfológico foi aplicado a uma imagem orbital. Nota-se que, apesar de pequeno, há um ligeiro aumento das áreas mais claras pertencentes à cena.</p>
+<center>
+<div class="figure"><span id="fig:dilatacaoorbit"></span>
+<img src="Imagens/exemplo_dilation_orbit.png" alt="Efeito alcançado pela aplicação do operador morfológico de *Dilatação* em uma imagem orbital de 1000 x 1000 pixels. Imagem orbital original (a); e Imagem dilatada por máscara 3 x 3 (b)." width="100%" />
+<p class="caption">
+Figura 3.4: Efeito alcançado pela aplicação do operador morfológico de <em>Dilatação</em> em uma imagem orbital de 1000 x 1000 pixels. Imagem orbital original (a); e Imagem dilatada por máscara 3 x 3 (b).
+</p>
+</div>
+</center>
+<p>No âmbito desta biblioteca, tal operador pode ser aplicado através da função <em>dilation_( )</em>.</p>
+</div>
+<div id="gradiente-morfologico" class="section level2">
+<h2><span class="header-section-number">3.3</span> Gradiente Morfológico</h2>
+<p>O <em>Gradiente Morfológico</em> (GM) de uma imagem A por uma máscara B é definido por <span class="citation">(R. C. GONZALEZ <a href="#ref-gonzalez">2010</a>)</span> de acordo com a Equação <a href="morfologia-matematica.html#eq:gm">(3.3)</a>:</p>
+<span class="math display" id="eq:gm">\[\begin{equation}
+GM = (A \oplus B ) - (A \ominus B)
+\tag{3.3}
+\end{equation}\]</span>
+<p>Ou seja, nada mais é do que o resultado da <em>Dilatação</em> menos o resultado da <em>Erosão</em>. A Figura <a href="morfologia-matematica.html#fig:gradmorfs">3.5</a> exemplifica o resultado de tal operador morfológico em uma imagem sintética.</p>
+<center>
+<div class="figure"><span id="fig:gradmorfs"></span>
+<img src="Imagens/exemplo_grad_morf.png" alt="Efeito alcançado pela aplicação do operador morfológico *Gradiente Morfológico* em uma imagem sintética. Imagem original (a); e Resultado da aplicação do operador (b)." width="80%" />
+<p class="caption">
+Figura 3.5: Efeito alcançado pela aplicação do operador morfológico <em>Gradiente Morfológico</em> em uma imagem sintética. Imagem original (a); e Resultado da aplicação do operador (b).
+</p>
+</div>
+</center>
+<p>Para exemplificar os efeitos de tal operador morfológico em imagens orbitais, é mostrado na Figura <a href="morfologia-matematica.html#fig:gradmorfo">3.6</a> como age tal operador na mesma imagem orbital vista nas Figuras <a href="morfologia-matematica.html#fig:erosaoorbit">3.2</a> e <a href="morfologia-matematica.html#fig:dilatacaoorbit">3.4</a>.</p>
+<center>
+<div class="figure"><span id="fig:gradmorfo"></span>
+<img src="Imagens/exemplo_grad_morf_orbit.png" alt="Efeito alcançado pela aplicação do *Gradiente Morfológico* em uma imagem orbital de 1000 x 1000 pixels. Imagem orbital original (a); e Imagem resultado da aplicação do Gradiente Morfológico com uma máscara 3 x 3 (b)." width="100%" />
+<p class="caption">
+Figura 3.6: Efeito alcançado pela aplicação do <em>Gradiente Morfológico</em> em uma imagem orbital de 1000 x 1000 pixels. Imagem orbital original (a); e Imagem resultado da aplicação do Gradiente Morfológico com uma máscara 3 x 3 (b).
+</p>
+</div>
+</center>
+<p>Como pode ser visto, apenas as bordas das feições contidas na imagem são retornadas, em diferentes níveis de cinza. Ao aplicar um algoritmo de limiarização, como os descritos no próximo capítulo, podem ser obtidas informações das bordas dos objetos. Ainda assim, tais bordas podem ser muito “grossas” na imagem, o que pode ser caracterizado como fonte de incerteza nas informações. Para corrigir tal fonte de incertezas, basta aplicar outro operador morfológico chamado de <em>Afinamento Morfológico</em> que visa a redução de tais bordas já limiarizadas a linhas de largura igual a apenas 1 pixel.</p>
+<p>No âmbito desta biblioteca, o operador de <em>Gradiente Morfológico</em> pode ser aplicado através da função <em>grad_morf( )</em>.</p>
+</div>
+<div id="afinamento-morfologico" class="section level2">
+<h2><span class="header-section-number">3.4</span> Afinamento Morfológico</h2>
+<p>O <em>Afinamento Morfológico</em>, como dito anteriormente, visa a redução dos objetos da cena a extruturas que possuem largura de apenas 1 pixel. De acordo com <span class="citation">(R. C. GONZALEZ <a href="#ref-gonzalez">2010</a>)</span>, tal método é composto pela aplicação de várias transformadas <em>hit-or-miss</em>, definidas de acordo com a equação <a href="morfologia-matematica.html#eq:hitormiss">(3.4)</a>:</p>
+<span class="math display" id="eq:hitormiss">\[\begin{equation}
+A \otimes = A - (A \circledast B)
+\tag{3.4}
+\end{equation}\]</span>
+<p>Sendo <span class="math inline">\(\otimes\)</span> o afinamento e <span class="math inline">\(\circledast\)</span> a transformada <em>hit-or-miss</em>. Nesta última, uma máscara pré-estabelecida é comparada com a região a ser transformada. Os termos sobrepostos pela máscara são comparados com a mesma, e caso haja uma compatibilidade entre ambas, diz-se que há um “hit”, e caso contrário, há um “miss”. No caso do “hit”, há uma mudança no valor do pixel, no caso do “miss”, o pixel permanece o mesmo.</p>
+<p>Como diferentes máscaras podem ser usadas para gerar afinamentos diferentes, foi implementado nesta biblioteca o modelo mais genérico possível, usando um total de 8 diferentes máscaras (Figura <a href="morfologia-matematica.html#fig:mascarashitmiss">3.7</a>).</p>
+<center>
+<div class="figure"><span id="fig:mascarashitmiss"></span>
+<img src="Imagens/mascaras_GM.png" alt="(a) até (h) - Máscaras usadas nas transformadas *hit-or-miss* do *Afinamento Morfológico* implementado." width="100%" />
+<p class="caption">
+Figura 3.7: (a) até (h) - Máscaras usadas nas transformadas <em>hit-or-miss</em> do <em>Afinamento Morfológico</em> implementado.
+</p>
+</div>
+</center>
+<p>Para que haja uma compatibilidade do algoritmo com os dados de entrada, tal operador pode ser usado apenas com imagens binásrias, ou seja, com níveis de cinza iguais a apenas 0 e 1. Na Figura (fig:mascarashitmiss), onde se encontram os valores iguais a “X”, indicam que para estas posições, não importa qual seja o valor do pixel analisado.</p>
+<p>O efeito da aplicação de tal operador é demonstrado pela Figura <a href="morfologia-matematica.html#fig:exemplogm">3.8</a>.</p>
+<center>
+<div class="figure"><span id="fig:exemplogm"></span>
+<img src="Imagens/exemplo_MT.png" alt="Imagem sintética binária (a); e Aplicação do afinamento morfológico (b)." width="80%" />
+<p class="caption">
+Figura 3.8: Imagem sintética binária (a); e Aplicação do afinamento morfológico (b).
+</p>
+</div>
+</center>
+</div>
+<div id="exercicios-2" class="section level2">
+<h2><span class="header-section-number">3.5</span> Exercícios</h2>
+<ol style="list-style-type: decimal">
+<li><p>Com o auxílio das funções <em>erosion_()</em> e <em>dilation_()</em> obtenha o resultado para a Erosão e Dilatação em uma imagem de seu computador. Depois disso faça uma subtração simples entre as duas. Descreva o resultado alcançado. (Dica: Use a função <em>convert(Array{Float32}, convert(Array{Grey}, sua_imagem))</em> para converter sua imagem em uma matriz antes do processo, e depois a função <em>imshow()</em> da bibioteca ImageView para visualizar o resultado final).</p></li>
+<li><p>Qual a diferença básica entre a Erosão e a Dilatação?</p></li>
+<li><p>Como é feito o Gradiente Morfológico?</p></li>
+<li><p>O que acontece com as feições de uma imagem que passa pelo processo de Afinamento Morfológico?</p></li>
+</ol>
+
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-falcon">
+<p>J. FACON. 2011. “A Morfologia Matemática E Suas Aplicações Em Processamento de Imagens” Capítulo 2 (p. 61-128). VII Workshop de Visão Computacional – WVC 2011.</p>
+</div>
+<div id="ref-gonzalez">
+<p>R. C. GONZALEZ, R. C. WOODS. 2010. <em>Processamento Digital de Imagens</em>. 3ª Edição. São Paulo, São Paulo: Pearson Prentice Hall.</p>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="filtragem.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="limiarizacao.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/03-Morfologia_Matematica.Rmd",
+"text": "Edit"
+},
+"download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "";
+    if (src === "" || src === "true") src = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

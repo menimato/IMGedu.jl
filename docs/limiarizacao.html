@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>IMGedu</title>
+  <meta name="description" content="Material de apoio aos usuário da biblioteca de processamento de imagens digitais orbitais, cujo objetivo principal é o auxílio no aprendizado das funções aqui contidas.">
+  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
+
+  <meta property="og:title" content="IMGedu" />
+  <meta property="og:type" content="book" />
+
+
+  <meta property="og:description" content="Material de apoio aos usuário da biblioteca de processamento de imagens digitais orbitais, cujo objetivo principal é o auxílio no aprendizado das funções aqui contidas." />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="IMGedu" />
+
+  <meta name="twitter:description" content="Material de apoio aos usuário da biblioteca de processamento de imagens digitais orbitais, cujo objetivo principal é o auxílio no aprendizado das funções aqui contidas." />
+
+
+<meta name="author" content="Bruno Menini Matosak, Nilcilene das Graças Medeiros">
+
+
+<meta name="date" content="2018-08-27">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+
+<link rel="prev" href="morfologia-matematica.html">
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">IMGedu</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Prefácio</a></li>
+<li class="chapter" data-level="1" data-path="introducao.html"><a href="introducao.html"><i class="fa fa-check"></i><b>1</b> Introdução</a><ul>
+<li class="chapter" data-level="1.1" data-path="introducao.html"><a href="introducao.html#imagem-digital"><i class="fa fa-check"></i><b>1.1</b> Imagem Digital</a></li>
+<li class="chapter" data-level="1.2" data-path="introducao.html"><a href="introducao.html#processamento-de-imagens-digitais-pdi"><i class="fa fa-check"></i><b>1.2</b> Processamento de Imagens Digitais (PDI)</a></li>
+<li class="chapter" data-level="1.3" data-path="introducao.html"><a href="introducao.html#julia-language"><i class="fa fa-check"></i><b>1.3</b> Julia Language</a></li>
+<li class="chapter" data-level="1.4" data-path="introducao.html"><a href="introducao.html#exercicios"><i class="fa fa-check"></i><b>1.4</b> Exercícios</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="filtragem.html"><a href="filtragem.html"><i class="fa fa-check"></i><b>2</b> Filtragem</a><ul>
+<li class="chapter" data-level="2.1" data-path="filtragem.html"><a href="filtragem.html#convolucao"><i class="fa fa-check"></i><b>2.1</b> Convolução</a></li>
+<li class="chapter" data-level="2.2" data-path="filtragem.html"><a href="filtragem.html#filtros-passa-baixa"><i class="fa fa-check"></i><b>2.2</b> Filtros Passa-Baixa</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="filtragem.html"><a href="filtragem.html#filtro-de-media"><i class="fa fa-check"></i><b>2.2.1</b> Filtro de Média</a></li>
+<li class="chapter" data-level="2.2.2" data-path="filtragem.html"><a href="filtragem.html#filtro-da-mediana"><i class="fa fa-check"></i><b>2.2.2</b> Filtro da Mediana</a></li>
+<li class="chapter" data-level="2.2.3" data-path="filtragem.html"><a href="filtragem.html#filtro-gaussiano"><i class="fa fa-check"></i><b>2.2.3</b> Filtro Gaussiano</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="filtragem.html"><a href="filtragem.html#filtros-passa-alta"><i class="fa fa-check"></i><b>2.3</b> Filtros Passa-Alta</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="filtragem.html"><a href="filtragem.html#operador-de-sobel"><i class="fa fa-check"></i><b>2.3.1</b> Operador de Sobel</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="filtragem.html"><a href="filtragem.html#filtragem-adaptativa"><i class="fa fa-check"></i><b>2.4</b> Filtragem Adaptativa</a><ul>
+<li class="chapter" data-level="2.4.1" data-path="filtragem.html"><a href="filtragem.html#filtro-gaussiano-adaptativo"><i class="fa fa-check"></i><b>2.4.1</b> Filtro Gaussiano Adaptativo</a></li>
+</ul></li>
+<li class="chapter" data-level="2.5" data-path="filtragem.html"><a href="filtragem.html#exercicios-1"><i class="fa fa-check"></i><b>2.5</b> Exercícios</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="morfologia-matematica.html"><a href="morfologia-matematica.html"><i class="fa fa-check"></i><b>3</b> Morfologia Matemática</a><ul>
+<li class="chapter" data-level="3.1" data-path="morfologia-matematica.html"><a href="morfologia-matematica.html#erosao"><i class="fa fa-check"></i><b>3.1</b> Erosão</a></li>
+<li class="chapter" data-level="3.2" data-path="morfologia-matematica.html"><a href="morfologia-matematica.html#dilatacao"><i class="fa fa-check"></i><b>3.2</b> Dilatação</a></li>
+<li class="chapter" data-level="3.3" data-path="morfologia-matematica.html"><a href="morfologia-matematica.html#gradiente-morfologico"><i class="fa fa-check"></i><b>3.3</b> Gradiente Morfológico</a></li>
+<li class="chapter" data-level="3.4" data-path="morfologia-matematica.html"><a href="morfologia-matematica.html#afinamento-morfologico"><i class="fa fa-check"></i><b>3.4</b> Afinamento Morfológico</a></li>
+<li class="chapter" data-level="3.5" data-path="morfologia-matematica.html"><a href="morfologia-matematica.html#exercicios-2"><i class="fa fa-check"></i><b>3.5</b> Exercícios</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="limiarizacao.html"><a href="limiarizacao.html"><i class="fa fa-check"></i><b>4</b> Limiarização</a><ul>
+<li class="chapter" data-level="4.1" data-path="limiarizacao.html"><a href="limiarizacao.html#limiarizacao-pela-mediana"><i class="fa fa-check"></i><b>4.1</b> Limiarização pela Mediana</a></li>
+<li class="chapter" data-level="4.2" data-path="limiarizacao.html"><a href="limiarizacao.html#limiarizacao-de-otsu"><i class="fa fa-check"></i><b>4.2</b> Limiarização de Otsu</a></li>
+<li class="chapter" data-level="4.3" data-path="limiarizacao.html"><a href="limiarizacao.html#exercicios-3"><i class="fa fa-check"></i><b>4.3</b> Exercícios</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">IMGedu</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="limiarizacao" class="section level1">
+<h1><span class="header-section-number">Capítulo 4</span> Limiarização</h1>
+<style>
+body {
+text-align: justify}
+</style>
+<p>O processo de <em>Limiarização</em> compreende uma transformação dos níveis de cinza de uma imagem. Dados que todos os pixels são compostos por uma determinada magnitude dentro de um espectro, na <em>Limiarização</em> é escolhido um nível de cinza como limiar, para que então todos os níveis acima sejam substituídos pelo valor máximo, e abaixo deste nível pelo valor de mínimo. Matematicamente, <span class="citation">(R. C. GONZALEZ <a href="#ref-gonzalez">2010</a>)</span> define a <em>Limiarização</em> como (Equação <a href="limiarizacao.html#eq:limi">(4.1)</a>):</p>
+<span class="math display" id="eq:limi">\[\begin{equation}
+g(x,y) = \left\{\begin{matrix}
+1 \thinspace \thinspace \thinspace \thinspace \text{se} \thinspace \thinspace \thinspace \thinspace f(x,y)&gt;T \\
+0 \thinspace \thinspace \thinspace \thinspace \text{se} \thinspace \thinspace \thinspace \thinspace  f(x,y)\le T
+\end{matrix}\right.
+\tag{4.1}
+\end{equation}\]</span>
+<p>Sendo <span class="math inline">\(g(x,y)\)</span> a imagem resultante da imagem <span class="math inline">\(f(x,y)\)</span>, <span class="math inline">\(T\)</span> é o nível escolhido para a <em>Limiarização</em>, e 1 o valor máximo e 0 o valor mínimo. O resultado, a imagem <span class="math inline">\(g(x,y)\)</span>, é então uma imagem <em>binarizada</em>.</p>
+<div id="limiarizacao-pela-mediana" class="section level2">
+<h2><span class="header-section-number">4.1</span> Limiarização pela Mediana</h2>
+<p>O processo de <em>Limiarização Pela Mediana</em> é um dos mais simples de ser implementados. Como dito anteriormente, na limiarização é escolhido um valor de nível de cinza que servirá como divisor dos níveis de cinza que adotarão a cor branca dos que adotarão a cor preta. Como o próprio nome deixa implícito, o critério empregado é a utilização do valor de mediana entre os pixels de toda a imagem para escolher o valor de <span class="math inline">\(T\)</span> referente à Equação <a href="limiarizacao.html#eq:limi">(4.1)</a>.</p>
+<p>Tomando uma imagem orbital já filtrada com o Operador de Sobel como exemplo, o resultado da aplicação deste tipo de limiarização é demonstrado através da Figura <a href="limiarizacao.html#fig:mediana">4.1</a>.</p>
+<center>
+<div class="figure"><span id="fig:mediana"></span>
+<img src="Imagens/median.png" alt="Imagem orbital filtrada pelo Operador de sobel (a) e aplicação da Limiarização pela Mediana (b)." width="100%" />
+<p class="caption">
+Figura 4.1: Imagem orbital filtrada pelo Operador de sobel (a) e aplicação da Limiarização pela Mediana (b).
+</p>
+</div>
+</center>
+</div>
+<div id="limiarizacao-de-otsu" class="section level2">
+<h2><span class="header-section-number">4.2</span> Limiarização de Otsu</h2>
+<p>O Método de Otsu para a limiarização pode ser considerado como uma ferramenta para a definição de um nível ótimo para o limiar, visto que não é afetado pela subjetividade do usuário. Tal método pode ser definido da seguinte forma <span class="citation">(N. Otsu <a href="#ref-otsu">1979</a>)</span>, <span class="citation">(R. C. GONZALEZ <a href="#ref-gonzalez">2010</a>)</span>:</p>
+<ol style="list-style-type: decimal">
+<li><p>Calcular o histograma normalizado da imagem de entrada. Designar os componentes do histograma como <span class="math inline">\(p_i\)</span>, <span class="math inline">\(i = 0, 1, 2, \cdots, L-1\)</span>.</p></li>
+<li><p>Calcular as comas acumuladas, <span class="math inline">\(P_1 (k)\)</span>, para <span class="math inline">\(k = 0, 1, 2, \cdots, L-1\)</span>.</p></li>
+<li><p>Calcular as médias acumuladas, <span class="math inline">\(m(k)\)</span>, para <span class="math inline">\(k = 0, 1, 2, \cdots, L-1\)</span>.</p></li>
+<li><p>Calcular a intensidade média global, <span class="math inline">\(m_G\)</span>.</p></li>
+<li><p>Calcular a variância entre classes, <span class="math inline">\(\sigma_B^2(k)\)</span>, para <span class="math inline">\(k = 0, 1, 2, \cdots, L-1\)</span>.</p></li>
+<li><p>Obter o limiar de Otsu, <span class="math inline">\(k*\)</span>, como o valor de <span class="math inline">\(k\)</span>. Se a máxima não for única, obter <span class="math inline">\(k*\)</span> pela média dos valores de <span class="math inline">\(k\)</span> que correspondem aos diversos valores máximos detectados.</p></li>
+<li><p>Obter a medida de separabilidade, <span class="math inline">\(\eta *\)</span>, avaliando <span class="math inline">\(\eta (k) = \frac{\sigma_B^2(k)}{\sigma_G^2}\)</span> em <span class="math inline">\(k=k*\)</span>.</p></li>
+</ol>
+<p>A Figura <a href="limiarizacao.html#fig:otsu">4.2</a> demonstra os efeitos alcançados por tal operação dada uma imagem orbital já filtrada pelo Operador de Sobel.</p>
+<center>
+<div class="figure"><span id="fig:otsu"></span>
+<img src="Imagens/otsu.png" alt="Imagem orbital filtrada pelo Operador de sobel (a) e aplicação da Limiarização pelo Método de Otsu (b)." width="100%" />
+<p class="caption">
+Figura 4.2: Imagem orbital filtrada pelo Operador de sobel (a) e aplicação da Limiarização pelo Método de Otsu (b).
+</p>
+</div>
+</center>
+<p>A função designada para tal processo é <em>otsu_threshold_()</em>.</p>
+</div>
+<div id="exercicios-3" class="section level2">
+<h2><span class="header-section-number">4.3</span> Exercícios</h2>
+<ol style="list-style-type: decimal">
+<li><p>Qual a definição matemática para o processo de limiarização?</p></li>
+<li><p>Qual o resultado encontrado após aplicar a Limiarização pela Mediana duas vezes seguidas na mesma imagem?</p></li>
+<li><p>Cite as etapas que definem o Método de Limiarização de Otsu.</p></li>
+</ol>
+
+<div id="refs" class="references">
+<div>
+<p>N. Otsu. 1979. “A Threshold Selection Method from Gray Level Histograms” Vol. 9 (No. 1). IEEE transactions on systems, man,; cybernetics.</p>
+</div>
+<div>
+<p>R. C. GONZALEZ, R. C. WOODS. 2010. <em>Processamento Digital de Imagens</em>. 3ª Edição. São Paulo, São Paulo: Pearson Prentice Hall.</p>
+</div>
+</div>
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-gonzalez">
+<p>R. C. GONZALEZ, R. C. WOODS. 2010. <em>Processamento Digital de Imagens</em>. 3ª Edição. São Paulo, São Paulo: Pearson Prentice Hall.</p>
+</div>
+<div id="ref-otsu">
+<p>N. Otsu. 1979. “A Threshold Selection Method from Gray Level Histograms” Vol. 9 (No. 1). IEEE transactions on systems, man,; cybernetics.</p>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="morfologia-matematica.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/04-Limiarizacao.Rmd",
+"text": "Edit"
+},
+"download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "";
+    if (src === "" || src === "true") src = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

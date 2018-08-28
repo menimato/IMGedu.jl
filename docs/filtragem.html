@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>IMGedu</title>
+  <meta name="description" content="Material de apoio aos usuário da biblioteca de processamento de imagens digitais orbitais, cujo objetivo principal é o auxílio no aprendizado das funções aqui contidas.">
+  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
+
+  <meta property="og:title" content="IMGedu" />
+  <meta property="og:type" content="book" />
+
+
+  <meta property="og:description" content="Material de apoio aos usuário da biblioteca de processamento de imagens digitais orbitais, cujo objetivo principal é o auxílio no aprendizado das funções aqui contidas." />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="IMGedu" />
+
+  <meta name="twitter:description" content="Material de apoio aos usuário da biblioteca de processamento de imagens digitais orbitais, cujo objetivo principal é o auxílio no aprendizado das funções aqui contidas." />
+
+
+<meta name="author" content="Bruno Menini Matosak, Nilcilene das Graças Medeiros">
+
+
+<meta name="date" content="2018-08-27">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+
+<link rel="prev" href="introducao.html">
+<link rel="next" href="morfologia-matematica.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">IMGedu</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Prefácio</a></li>
+<li class="chapter" data-level="1" data-path="introducao.html"><a href="introducao.html"><i class="fa fa-check"></i><b>1</b> Introdução</a><ul>
+<li class="chapter" data-level="1.1" data-path="introducao.html"><a href="introducao.html#imagem-digital"><i class="fa fa-check"></i><b>1.1</b> Imagem Digital</a></li>
+<li class="chapter" data-level="1.2" data-path="introducao.html"><a href="introducao.html#processamento-de-imagens-digitais-pdi"><i class="fa fa-check"></i><b>1.2</b> Processamento de Imagens Digitais (PDI)</a></li>
+<li class="chapter" data-level="1.3" data-path="introducao.html"><a href="introducao.html#julia-language"><i class="fa fa-check"></i><b>1.3</b> Julia Language</a></li>
+<li class="chapter" data-level="1.4" data-path="introducao.html"><a href="introducao.html#exercicios"><i class="fa fa-check"></i><b>1.4</b> Exercícios</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="filtragem.html"><a href="filtragem.html"><i class="fa fa-check"></i><b>2</b> Filtragem</a><ul>
+<li class="chapter" data-level="2.1" data-path="filtragem.html"><a href="filtragem.html#convolucao"><i class="fa fa-check"></i><b>2.1</b> Convolução</a></li>
+<li class="chapter" data-level="2.2" data-path="filtragem.html"><a href="filtragem.html#filtros-passa-baixa"><i class="fa fa-check"></i><b>2.2</b> Filtros Passa-Baixa</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="filtragem.html"><a href="filtragem.html#filtro-de-media"><i class="fa fa-check"></i><b>2.2.1</b> Filtro de Média</a></li>
+<li class="chapter" data-level="2.2.2" data-path="filtragem.html"><a href="filtragem.html#filtro-da-mediana"><i class="fa fa-check"></i><b>2.2.2</b> Filtro da Mediana</a></li>
+<li class="chapter" data-level="2.2.3" data-path="filtragem.html"><a href="filtragem.html#filtro-gaussiano"><i class="fa fa-check"></i><b>2.2.3</b> Filtro Gaussiano</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="filtragem.html"><a href="filtragem.html#filtros-passa-alta"><i class="fa fa-check"></i><b>2.3</b> Filtros Passa-Alta</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="filtragem.html"><a href="filtragem.html#operador-de-sobel"><i class="fa fa-check"></i><b>2.3.1</b> Operador de Sobel</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="filtragem.html"><a href="filtragem.html#filtragem-adaptativa"><i class="fa fa-check"></i><b>2.4</b> Filtragem Adaptativa</a><ul>
+<li class="chapter" data-level="2.4.1" data-path="filtragem.html"><a href="filtragem.html#filtro-gaussiano-adaptativo"><i class="fa fa-check"></i><b>2.4.1</b> Filtro Gaussiano Adaptativo</a></li>
+</ul></li>
+<li class="chapter" data-level="2.5" data-path="filtragem.html"><a href="filtragem.html#exercicios-1"><i class="fa fa-check"></i><b>2.5</b> Exercícios</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="morfologia-matematica.html"><a href="morfologia-matematica.html"><i class="fa fa-check"></i><b>3</b> Morfologia Matemática</a><ul>
+<li class="chapter" data-level="3.1" data-path="morfologia-matematica.html"><a href="morfologia-matematica.html#erosao"><i class="fa fa-check"></i><b>3.1</b> Erosão</a></li>
+<li class="chapter" data-level="3.2" data-path="morfologia-matematica.html"><a href="morfologia-matematica.html#dilatacao"><i class="fa fa-check"></i><b>3.2</b> Dilatação</a></li>
+<li class="chapter" data-level="3.3" data-path="morfologia-matematica.html"><a href="morfologia-matematica.html#gradiente-morfologico"><i class="fa fa-check"></i><b>3.3</b> Gradiente Morfológico</a></li>
+<li class="chapter" data-level="3.4" data-path="morfologia-matematica.html"><a href="morfologia-matematica.html#afinamento-morfologico"><i class="fa fa-check"></i><b>3.4</b> Afinamento Morfológico</a></li>
+<li class="chapter" data-level="3.5" data-path="morfologia-matematica.html"><a href="morfologia-matematica.html#exercicios-2"><i class="fa fa-check"></i><b>3.5</b> Exercícios</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="limiarizacao.html"><a href="limiarizacao.html"><i class="fa fa-check"></i><b>4</b> Limiarização</a><ul>
+<li class="chapter" data-level="4.1" data-path="limiarizacao.html"><a href="limiarizacao.html#limiarizacao-pela-mediana"><i class="fa fa-check"></i><b>4.1</b> Limiarização pela Mediana</a></li>
+<li class="chapter" data-level="4.2" data-path="limiarizacao.html"><a href="limiarizacao.html#limiarizacao-de-otsu"><i class="fa fa-check"></i><b>4.2</b> Limiarização de Otsu</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">IMGedu</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="filtragem" class="section level1">
+<h1><span class="header-section-number">Capítulo 2</span> Filtragem</h1>
+<style>
+body {text-align: justify}
+</style>
+<p>As técnicas de filtragem se dividem em <em>filtragem espacial</em> e <em>filtragem no domínio da frequência</em> <span class="citation">(R. C. GONZALEZ <a href="#ref-gonzalez">2010</a>)</span>. Serão tratados aqui filtros espaciais, que são implementados no domínio espacial, que se trata do plano que contém os pixels, já os filtros do domínio da frequência são aplicados sobre a Transformada de Fourier de uma imagem, e não sobre a imagem em si <span class="citation">(R. C. GONZALEZ <a href="#ref-gonzalez">2010</a>)</span>. Filtros espaciais podem ser descritos pela Equação <a href="filtragem.html#eq:filt">(2.1)</a>:</p>
+<span class="math display" id="eq:filt">\[\begin{equation}
+g(x,y)=T[f(x,y)]
+\tag{2.1}
+\end{equation}\]</span>
+<p>onde <span class="math inline">\(f(x,y)\)</span> é a imagem de entrada, <span class="math inline">\(g(x,y)\)</span> é a imagem de saída, e <span class="math inline">\(T\)</span> é um operador em <span class="math inline">\(f\)</span> definido em uma vizinhança do ponto <span class="math inline">\((x,y)\)</span> <span class="citation">(R. C. GONZALEZ <a href="#ref-gonzalez">2010</a>)</span>.</p>
+<p>Um dos princípios da filtragem é que para atribuir um novo valor para o pixel <span class="math inline">\((x,y)\)</span> leva-se em consideração não só o pixel analisado, mas também o seu entorno. Um filtro pode ser definido pelo seu aplicador (também chamado de máscara), que é o que define como será utlizado o entorno do pixel para gerar <span class="math inline">\(g(x,y)\)</span>. Normalmente este aplicador é retangular e bem menor do que a imagem <span class="citation">(R. C. GONZALEZ <a href="#ref-gonzalez">2010</a>)</span>. A filtragem pode ser explicada melhor analisando o processo de convolução, que é o processo de aplicação da máscara do filtro.</p>
+<div id="convolucao" class="section level2">
+<h2><span class="header-section-number">2.1</span> Convolução</h2>
+<p>O processo de convolução pode ser realizado tanto de forma unidimensional, bidimensional, cúbica, etc. Os filtros aplicados em imagens digitais orbitais se tratam normalmente de processos de convolução bidimensional. O processo pode ser descrito como parte integrante da função <span class="math inline">\(T\)</span> da equação <a href="filtragem.html#eq:filt">(2.1)</a>, onde o espaço da imagem é percorrido pela máscara definidora do filtro. A Figura <a href="filtragem.html#fig:conv">2.1</a> demonstra como uma máscara de ordem 3 x 3 percorre uma imagem para a aplicação do filtro <span class="citation">(P. R. MENESES <a href="#ref-meneses">2012</a>)</span>.</p>
+<center>
+<div class="figure"><span id="fig:conv"></span>
+<img src="Imagens/convolucao.png" alt="Movimento da máscara de tamanho 3 x 3 para filtrar a imagem. O pixel cinza é o pixel central que terá o seu valor modificado conforme sejam os pesos dos pixels do filtro. Fonte: [@meneses]" width="70%" />
+<p class="caption">
+Figura 2.1: Movimento da máscara de tamanho 3 x 3 para filtrar a imagem. O pixel cinza é o pixel central que terá o seu valor modificado conforme sejam os pesos dos pixels do filtro. Fonte: <span class="citation">(P. R. MENESES <a href="#ref-meneses">2012</a>)</span>
+</p>
+</div>
+</center>
+<p>O pixel cinza central, demonstrado na Figura <a href="filtragem.html#fig:conv">2.1</a>, é o pixel que está sendo filtrado e as linhas mais escuras representam a sobreposição da máscara com o entorno do pixel central. Seu novo valor é obtido a partir da combinação dos valores da máscara e do pixel central e sua vizinhança sobreposta. De acordo com <span class="citation">(O. MARQUES FILHO <a href="#ref-mfilho">1999</a>)</span>, o processo de obtenção de um novo valor para o pixel filtrado pode ser definido da seguinte forma:</p>
+<p>Sendo o seguinte arranjo uma máscara 3 x 3 de um filtro qualquer de coeficientes genéricos <span class="math inline">\(W_1\)</span>, <span class="math inline">\(W_2\)</span>, …, <span class="math inline">\(W_9\)</span>:</p>
+<center>
+<div class="figure"><span id="fig:a-mask"></span>
+<img src="Imagens/a-mask.png" alt="Máscara genérica 3 x 3 de um filtro." width="23%" />
+<p class="caption">
+Figura 2.2: Máscara genérica 3 x 3 de um filtro.
+</p>
+</div>
+</center>
+<p>E o seguinte arranjo uma sub-área de uma imagem, recoberta pela máscara anterior em um dos passos da Figura <a href="filtragem.html#fig:conv">2.1</a>, com valores de níveis de cinza iguais a <span class="math inline">\(Z_1\)</span>, <span class="math inline">\(Z_2\)</span>, …, <span class="math inline">\(Z_9\)</span></p>
+<center>
+<div class="figure"><span id="fig:a-img"></span>
+<img src="Imagens/a-img.png" alt="Sub-área coberta pela máscara do filtro." width="23%" />
+<p class="caption">
+Figura 2.3: Sub-área coberta pela máscara do filtro.
+</p>
+</div>
+</center>
+<p>A máscara percorre toda a imagem a partir do canto superior esquerdo até o canto inferior direito, definindo a cada posição uma nova sub-imagem para a filtragem do pixel referente à posição <span class="math inline">\(Z_5\)</span> (o pixel central, cinza na Figura <a href="filtragem.html#fig:conv">2.1</a>. O valor do pixel filtrado referente a cada posição da máscara é salvo em uma matriz denominada de “imagem-destino”, por um valor correspondente a Equação <a href="filtragem.html#eq:convo">(2.2)</a> <span class="citation">(O. MARQUES FILHO <a href="#ref-mfilho">1999</a>)</span>.</p>
+<span class="math display" id="eq:convo">\[\begin{equation}
+Z = \sum\limits_{i=1}^9(W_i \cdot Z_i)
+\tag{2.2}
+\end{equation}\]</span>
+<p>Criando arranjos de coeficientes para as máscaras de forma inteligente, podem ser obtidos os mais diversos filtros e efeitos na imagem filtrada. Dentro deste escopo, podem ser citados dois tipos de filtros: <em>filtros passa-baixa</em> e <em>filtros passa-alta</em>.</p>
+</div>
+<div id="filtros-passa-baixa" class="section level2">
+<h2><span class="header-section-number">2.2</span> Filtros Passa-Baixa</h2>
+<p>Filtros passa-baixa são aqueles que preservam os componenetes de baixa frequencia da imagem, removendo ruídos à custo da nitidez, portanto, podem ser considerados filtros de suavização <span class="citation">(P. R. MENESES <a href="#ref-meneses">2012</a>)</span>. Por suavizar a imagem, detalhes como bordas ríspidas (diferenças abruptas dos níveis de cinza entre pixels vizinhos) tendem a serem atenuadas, o que também acontece com os ruídos provenientes das mais diversas fontes, como erros no obturador, atmosfera, etc. Uma característica marcante de tais filtros, é que a máscara possui apenas termos com valor maior ou igual a zero. Exemplos clássicos de filtros passa-baixa são o <em>Filtro de Média</em>, <em>Filtro de Mediana</em> e <em>Filtro Gaussiano</em>.</p>
+<div id="filtro-de-media" class="section level3">
+<h3><span class="header-section-number">2.2.1</span> Filtro de Média</h3>
+<p>Este filtro é definido por ter em todos os termos da máscara o valor 1. Se trata, literalmente, de implementar a média da região coberta pela máscara para o novo valor do pixel filtrado.</p>
+<p>A Figura <a href="filtragem.html#fig:media">2.4</a> ilustra uma máscara de ordem 3 x 3 para o filtro de média.</p>
+<center>
+<div class="figure"><span id="fig:media"></span>
+<img src="Imagens/media-mask.png" alt="Exemplo de máscara de ordem 3 x 3 para o Filtro de Média, sendo o termo do centro relativo ao pixel filtrado." width="20%" />
+<p class="caption">
+Figura 2.4: Exemplo de máscara de ordem 3 x 3 para o Filtro de Média, sendo o termo do centro relativo ao pixel filtrado.
+</p>
+</div>
+</center>
+<p>Tal filtro possui uma das implementações mais básicas para um filtro, podendo este ser usado no âmbito desta biblioteca através da função <em>filter_mean( )</em>. O efeito deste filtro em uma imagem sintética pode ser visto na Figura <a href="filtragem.html#fig:mediaex">2.5</a>, a seguir.</p>
+<center>
+<div class="figure"><span id="fig:mediaex"></span>
+<img src="Imagens/aplicacao_mean.png" alt="Exemplo de aplicação do Filtro de Média em uma imagem sintética." width="80%" />
+<p class="caption">
+Figura 2.5: Exemplo de aplicação do Filtro de Média em uma imagem sintética.
+</p>
+</div>
+</center>
+</div>
+<div id="filtro-da-mediana" class="section level3">
+<h3><span class="header-section-number">2.2.2</span> Filtro da Mediana</h3>
+<p>Durante o processo de convolução, são usados como dados de entrada os valores dos níveis de cinza correspondentes ao espaço recoberto pela máscara. O que diferencia os filtros de PDI são justamente as formas com que tais dados são tratados para que se obtenha o novo valor para o pixel analisado.</p>
+<p>No Filtro da Mediana, busca-se dentro do intervalo de dados, oriundos do recobrimento da máscara, pelo valor mediano dos níveis de cinza, sendo este o novo valor a ser adotado pelo pixel filtrado.</p>
+<p>Considerando como exemplo o conjunto de dados da Figura <a href="filtragem.html#fig:mediana">2.6</a>, têm-se que os dados ordenados de forma crescente são: <em>3, 27, 55, 92, 177, 196, 208, 212</em> e <em>237</em>.</p>
+<center>
+<div class="figure"><span id="fig:mediana"></span>
+<img src="Imagens/exemplo_mediana.png" alt="Exemplo de intervalo de dados referentes a níveis de cinza recobertos por uma máscara 3 x 3 para a filtragem do elemento correspondente ao número 237." width="30%" />
+<p class="caption">
+Figura 2.6: Exemplo de intervalo de dados referentes a níveis de cinza recobertos por uma máscara 3 x 3 para a filtragem do elemento correspondente ao número 237.
+</p>
+</div>
+</center>
+<p>Sendo assim, o pixel de valor correspondente a 237 passa a ser igual a 177, por este ser o valor da mediana para a janela observada. O filtro tem alto potencial de uso principalmente em casos onde há ruído de “sal e pimenta” nas imagens, como descrito por <span class="citation">(R. C. GONZALEZ <a href="#ref-gonzalez">2010</a>)</span>.</p>
+<p>Tal filtro pode ser usado no contexto desta biblioteca através da função <em>filter_median( )</em>, e seu efeito pode ser visto através da Figura <a href="filtragem.html#fig:medianaex">2.7</a>.</p>
+<center>
+<div class="figure"><span id="fig:medianaex"></span>
+<img src="Imagens/aplicacao_median.png" alt="Exemplo de aplicação do Filtro da Mediana em uma imagem sintética com ruído. Imagem original (a); Imagem (a) corrompida por ruído &quot;sal e pimenta&quot; (b); e Aplicação do Filtro de Mediana (c)." width="100%" />
+<p class="caption">
+Figura 2.7: Exemplo de aplicação do Filtro da Mediana em uma imagem sintética com ruído. Imagem original (a); Imagem (a) corrompida por ruído “sal e pimenta” (b); e Aplicação do Filtro de Mediana (c).
+</p>
+</div>
+</center>
+</div>
+<div id="filtro-gaussiano" class="section level3">
+<h3><span class="header-section-number">2.2.3</span> Filtro Gaussiano</h3>
+<p>A Filtragem Gaussiana é um processo onde a convolução é realizada na imagem visando a suavisação da cena, com uma máscara construída de forma condizente com a distribuição normal bidimensional. Gonzalez e Woods (2010) destacam que uma das formas de se implementar um filtro gaussiano é definindo a máscara através da Equação <a href="filtragem.html#eq:gauss">(2.3)</a>, onde a máscara final sofre uma normalização, para que assim a soma de seus elementos seja igual a 1.</p>
+<span class="math display" id="eq:gauss">\[\begin{equation}
+h(x,y) = e^{-\frac{x^2+y^2}{2\sigma^2}}
+\tag{2.3}
+\end{equation}\]</span>
+<p>Onde <span class="math inline">\(x\)</span> e <span class="math inline">\(y\)</span> são a distância do centro da máscara, medidos em unidades de pixel, já <span class="math inline">\(\sigma\)</span> é o desvio padrão utilizado para a distribuição, definindo o abaolamento do “sino” fomado pela distribuição.</p>
+<p>Diferentes valores de <span class="math inline">\(\sigma\)</span> geram diferentes “sinos” para a distribuição normal. Quanto maior o valor de <span class="math inline">\(\sigma\)</span> usado, maior será o abaolamento, levando a um maior borramento da imagem. A Figura <a href="filtragem.html#fig:normal">2.8</a> demonstra o formato da distribuição dos pesos da máscara de acordo com o valor de <span class="math inline">\(\sigma\)</span> adotado.</p>
+<center>
+<div class="figure"><span id="fig:normal"></span>
+<img src="Imagens/dist_normal.png" alt="&quot;Sinos&quot; gerados pela distribuição normal a serem usados na definição da máscara do Filtro Gaussiano, usando sigma igual a 1 e 1.5." width="80%" />
+<p class="caption">
+Figura 2.8: “Sinos” gerados pela distribuição normal a serem usados na definição da máscara do Filtro Gaussiano, usando sigma igual a 1 e 1.5.
+</p>
+</div>
+</center>
+<p>Um exemplo da aplicação do Filtro Gaussiano pode ser encontrado na Figura <a href="filtragem.html#fig:gaussiano">2.9</a>, a seguir:</p>
+<center>
+<div class="figure"><span id="fig:gaussiano"></span>
+<img src="Imagens/aplicacao_gauss.png" alt="Exemplo de aplicação do Filtro Gaussiano em uma imagem sintética com ruído radiométrico. Imagem sintética original (a); Imagem sintética com ruído radiométrico (b); e Aplicação do Filtro Gaussiano (c)." width="100%" />
+<p class="caption">
+Figura 2.9: Exemplo de aplicação do Filtro Gaussiano em uma imagem sintética com ruído radiométrico. Imagem sintética original (a); Imagem sintética com ruído radiométrico (b); e Aplicação do Filtro Gaussiano (c).
+</p>
+</div>
+</center>
+</div>
+</div>
+<div id="filtros-passa-alta" class="section level2">
+<h2><span class="header-section-number">2.3</span> Filtros Passa-Alta</h2>
+<p>De acordo com <span class="citation">(R. C. GONZALEZ <a href="#ref-gonzalez">2010</a>)</span>, diferente dos filtros <em>passa-baixa</em>, os filtros <em>passa-alta</em> têm um efeito de realce nas imagens, aumentando a nitidez de detalhes abruptos, porém, provocando uma redução no contraste da imagem.</p>
+<p>Os filtros <em>passa-alta</em> são compostos da mesma forma que qualquer outro outro tipo de filtro: são definidos pela máscara usada no processo de convolução. Tal máscara aqui pode ter termos positivos, negativos, ou nulos. Outros tipos de filtros, como a detecção de bordas, também são passíveis de implementação, visto que os termos da máscara podem assumir valores que os filtros <em>passa-baixa</em> não o fazem.</p>
+<p>A possibilidade de aumentar a nitidez de imagens através destes tipos de filtros é muito vantajosa, porém, tais filtros realçam também o ruído, que acaba por atrapalhar a interpretação das cenas.</p>
+<p>Um dos filtros <em>passa-baixa</em> mais conhecidos é o <em>Operador de Sobel</em>.</p>
+<div id="operador-de-sobel" class="section level3">
+<h3><span class="header-section-number">2.3.1</span> Operador de Sobel</h3>
+<p>A magnitude do gradiente são usadas em PDI para a implementação das derivadas de primeira ordem. A euquação a seguir mostra que o gradiente de <span class="math inline">\(f\)</span> nas coordenadas <span class="math inline">\((x,y)\)</span> de uma função <span class="math inline">\(f(x,y)\)</span> é definido como o <em>vetor</em> coluna bidimensional dado na Equação <a href="filtragem.html#eq:vetor">(2.4)</a> <span class="citation">(R. C. GONZALEZ <a href="#ref-gonzalez">2010</a>)</span>.</p>
+<span class="math display" id="eq:vetor">\[\begin{equation}
+\bigtriangledown f \equiv grad(f) \equiv \left [ \begin{matrix}
+g_x\\
+g_y
+\end{matrix} \right ] = \left [ \begin{matrix}
+\frac{\partial f}{\partial x}\\
+\frac{\partial f}{\partial y}
+\end{matrix} \right ]
+\tag{2.4}
+\end{equation}\]</span>
+<p>A principal propriedade geométrica deste vetor é a de apontar na direção da maior taxa de variação de <span class="math inline">\(f\)</span> na posição <span class="math inline">\((x,y)\)</span>. O módulo do vetor <span class="math inline">\(\bigtriangledown f\)</span> é escrito como <span class="math inline">\(M(x,y)\)</span>, de acordo com a Equação <a href="filtragem.html#eq:M">(2.5)</a>.</p>
+<span class="math display" id="eq:M">\[\begin{equation}
+M(x,y)=mag(\bigtriangledown f)=\sqrt{g^2_x+g_y^2}
+\tag{2.5}
+\end{equation}\]</span>
+<p>Neste caso, <span class="math inline">\(M(x,y)\)</span> é o valor da taxa de variação na direção do vetor gradiente.</p>
+<p>De uma forma mais simples, o <em>Operador de Sobel</em> pode ser descrito em duas etapas:</p>
+<ul>
+<li>A aplicação de duas diferentes máscaras na mesma imagem, resultando em <span class="math inline">\(g_x\)</span> e <span class="math inline">\(g_y\)</span> - imagens de mesmo tamanho, como mostrado na Figura <a href="filtragem.html#fig:sobel-mask">2.10</a>.</li>
+</ul>
+<center>
+<div class="figure"><span id="fig:sobel-mask"></span>
+<img src="Imagens/sobel-mask.png" alt="Máscaras usadas pelo *Operador de Sobel* para compor $g_x$ (a) e $g_y$ (b)." width="35%" />
+<p class="caption">
+Figura 2.10: Máscaras usadas pelo <em>Operador de Sobel</em> para compor <span class="math inline">\(g_x\)</span> (a) e <span class="math inline">\(g_y\)</span> (b).
+</p>
+</div>
+</center>
+<ul>
+<li>Depois disso, cada termo <span class="math inline">\(a_{ij}\)</span> da imagem resultante é calculado pela Equação <a href="filtragem.html#eq:aij">(2.6)</a>:</li>
+</ul>
+<span class="math display" id="eq:aij">\[\begin{equation}
+a_{ij} = \sqrt{{g_{x_{ij}}}^2+{g_{y_{ij}}}^2}
+\tag{2.6}
+\end{equation}\]</span>
+<p>Um exemplo para a aplicação do <em>Operador de Sobel</em> pode ser encontrado na Figura <a href="filtragem.html#fig:sobel">2.11</a>.</p>
+<center>
+<div class="figure"><span id="fig:sobel"></span>
+<img src="Imagens/aplicacao_sobel.png" alt="Imagem sintética (a); e Aplicação do *Operador de Sobel* (b)." width="80%" />
+<p class="caption">
+Figura 2.11: Imagem sintética (a); e Aplicação do <em>Operador de Sobel</em> (b).
+</p>
+</div>
+</center>
+<p>Como visto na Figura <a href="filtragem.html#fig:sobel">2.11</a> o efeito alcançado pelo <em>Operador de Sobel</em> é referente a detecção das bordas das feições presentes na imagem digital. Mais detalhes sobre a detecção de bordas são apresentados na Seção <em>5 - Detecçöao de Bordas</em> deste material.</p>
+<p>Tal método pode ser mudado para que bordas apenas em certas direções sejam adiquirias, mais especificamente, nas direções Norte-Sul, Leste-Oeste, Noroeste-Sudeste, e Nordeste-Sudoeste. Para tal, basta usar as seguintes máscaras no processo de filtragem, de acordo com a Figura <a href="filtragem.html#fig:sobel-dir">2.12</a>.</p>
+<center>
+<div class="figure"><span id="fig:sobel-dir"></span>
+<img src="Imagens/sobel-dire%C3%A7%C3%B5es.png" alt="Máscara para bordas nas direções Norte-Sul (a), Leste-Oeste (b), Noroeste-Sudeste (c), e Nordeste-Sudoeste (d)." width="70%" />
+<p class="caption">
+Figura 2.12: Máscara para bordas nas direções Norte-Sul (a), Leste-Oeste (b), Noroeste-Sudeste (c), e Nordeste-Sudoeste (d).
+</p>
+</div>
+</center>
+<p>O <em>Operador de Sobel</em> pode ser usado nesta biblioteca por meio da função <em>filter_sobel( )</em>.</p>
+</div>
+</div>
+<div id="filtragem-adaptativa" class="section level2">
+<h2><span class="header-section-number">2.4</span> Filtragem Adaptativa</h2>
+<p>A meta dos filtros adaptativos é transformar os sinais portadores de informação em um produto mais “limpo”, mais aprimorado. Tais filtros possuem regulação dinâmica, adaptando-se de acordo com os sinais encontrados. Tais tipos de filtros posem ser considerados um exemplo simples de algoritmos nda área de aprendizado de máquinas <span class="citation">(P. A. REGALIA <a href="#ref-regalia">2005</a>)</span>.</p>
+<p>Nos filtros elucidados anteriormente, têm-se sempre uma máscara fixa definida pelo usuário que filtra de forma constante e estática toda a imagem, uniformemente. No caso dos <em>filtros adaptativos</em> os parâmetros de filtragem de uma imgagem são calculados de acordo com dados estatísticos extraídos da mesma. Um exemplo de <em>filtro adaptativo</em> desenvolvido pelos autores e presente neste pacote é o <em>Filtro Gaussiano Adaptativo</em>.</p>
+<div id="filtro-gaussiano-adaptativo" class="section level3">
+<h3><span class="header-section-number">2.4.1</span> Filtro Gaussiano Adaptativo</h3>
+<p>No âmbito desta bibilioteca foi implementado um <em>Filtro Gaussiano Adaptativo</em>. No <em>Filtro Gaussiano</em> convencional uma máscara é definida no início do processo de filtragem de acordo com um valor de <span class="math inline">\(\sigma\)</span> aplicado à distribuição normal, e esta máscara percorre toda a imagem com todos os seus valores permanecendo os mesmos durante todo o processo - A imagem é filtrada toda pela mesma máscara. A estratégia escolhida para a implementação do <em>Filtro Gaussiano Adaptativo</em> foi implementar o filtro de forma que uma nova máscara fosse gerada para ser usado no processo de filtragem de cada pixel, usando as estatísticas dos valores sobrepostos na imagem pela máscara para definir o valor de <span class="math inline">\(\sigma\)</span> a ser usado na distribuição normal.</p>
+<p>O objetivo de tal filtro é diminuir o ruído das imagens orbitais no interior de feições, porém, mantendo intactas as bordas das mesmas, uma vez que o <em>Filtro Gaussiano</em> convencional diminui este ruído, porém, compromentendo a informação das bordas dos elementos da cena, como pode ser visto na Figura <a href="filtragem.html#fig:gaussiano">2.9</a>.</p>
+<p>Como dito anteriormente, ao usar um maior valor de <span class="math inline">\(\sigma\)</span> no <em>Filtro Gaussiano</em> convencional, obtém-se um maior borramento dos elementos da imagem, o que é desejável para as áreas internas das feições, que normalmente são homogêneas, e indesejável para as áreas de bordas de objetos, os quais deseja-se manter intactos.</p>
+<p>Tomando isso em consideração, analisa-se o comportamento estatístico das áreas de borda e das demais áreas. Para os casos onde há a presença de bordas, o desvio padrão entre os níveis de cinza tende a ser alto, devido à discrepância dos mesmos que formam a borda. Já para os demais casos, mesmo com ruído onde não há a presença de bordas, o desvio padrão mostra-se de menor magnitude que em regiões de bordas, portanto, para que tal filtro “borre” áreas internas de feições com ruído e mantenha as bordas intactas, adotata-se o inverso do desvio padrão da área do pixel filtrado para que seja criada a máscara a ser usada na filtragem do mesmo. A Figura <a href="filtragem.html#fig:localsigma">2.13</a> mostra o resultado da aplicação de tal filtro em uma imagem sintética corrompida por ruído.</p>
+<center>
+<div class="figure"><span id="fig:localsigma"></span>
+<img src="Imagens/aplicacao_localsigma.png" alt="Exemplo de aplicação do Filtro Gaussiano em uma imagem sintética com ruído radiométrico. Imagem sintética original (a); Imagem sintética com ruído radiométrico (b); e Aplicação do Filtro Gaussiano Adaptativo (c)." width="100%" />
+<p class="caption">
+Figura 2.13: Exemplo de aplicação do Filtro Gaussiano em uma imagem sintética com ruído radiométrico. Imagem sintética original (a); Imagem sintética com ruído radiométrico (b); e Aplicação do Filtro Gaussiano Adaptativo (c).
+</p>
+</div>
+</center>
+<p>Como pode ser visto, o interior das figuras foi filtrado com sucesso, enquanto a informação das bordas foi mantida praticamente intacta. No contexto desta bibilioteca, tal função pode ser usada através de <em>filter_gauss_localsigma( )</em>, sendo os parâmetros de entrada a imagem a ser filtrada, o tamanho da máscara (opcional, padrão igual a 3), e o numerador a ser usado no inverso do desvio padrão a ser usado como <span class="math inline">\(\sigma\)</span> na distribuição normal (opcional, padrão igual a 0,05).</p>
+</div>
+</div>
+<div id="exercicios-1" class="section level2">
+<h2><span class="header-section-number">2.5</span> Exercícios</h2>
+<ol style="list-style-type: decimal">
+<li><p>O que é uma máscara no contexto do PDI?</p></li>
+<li><p>Para se filtrar um pixel, é necessário apenas a máscara e o pixel a ser filtrado? Por quê?</p></li>
+<li><p>O que é o processo de convolução?</p></li>
+<li><p>Considere a seguinte máscara cujo termo central é referente ao pixel a ser filtrado:</p></li>
+</ol>
+<table>
+<tbody>
+<tr class="odd">
+<td align="center">0.98</td>
+<td align="center">0.10</td>
+<td align="center">0.89</td>
+</tr>
+<tr class="even">
+<td align="center">0.03</td>
+<td align="center">0.91</td>
+<td align="center">0.11</td>
+</tr>
+<tr class="odd">
+<td align="center">0.78</td>
+<td align="center">0.00</td>
+<td align="center">0.99</td>
+</tr>
+</tbody>
+</table>
+<p>Considere então o seguinte conjunto de pixels:</p>
+<table>
+<tbody>
+<tr class="odd">
+<td align="center">100</td>
+<td align="center">88</td>
+<td align="center">44</td>
+</tr>
+<tr class="even">
+<td align="center">114</td>
+<td align="center">102</td>
+<td align="center">82</td>
+</tr>
+<tr class="odd">
+<td align="center">130</td>
+<td align="center">115</td>
+<td align="center">99</td>
+</tr>
+</tbody>
+</table>
+<p>Considerando que a imagem aceita apenas valores inteiros como pixel, qual deve ser o novo valor do pixel central para a aplicação desta máscara no trecho de imagem?</p>
+<ol start="5" style="list-style-type: decimal">
+<li><p>Considerando o trecho de imagem anterior, qual deve ser o novo valor do pixel central caso seja aplicado um Filtro de Média, um Filtro de Mediana e um Filtro Gaussiano (<span class="math inline">\(\sigma = 1,4\)</span>)?</p></li>
+<li><p>Considerando uma imagem de dimensões n x n, como seria o código em Julia necessário para implementar o processo de convolução de uma máscara 3 x 3?</p></li>
+<li><p>Qual a diferença entre filtros passa-baixa e passa-alta?</p></li>
+<li><p>Qual a implicação da aplicação do Filtro de Sobel?</p></li>
+<li><p>O que é <em>filtragem adaptativa</em>?</p></li>
+</ol>
+
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-gonzalez">
+<p>R. C. GONZALEZ, R. C. WOODS. 2010. <em>Processamento Digital de Imagens</em>. 3ª Edição. São Paulo, São Paulo: Pearson Prentice Hall.</p>
+</div>
+<div id="ref-meneses">
+<p>P. R. MENESES, T. ALMEIDA. 2012. <em>Introdução Ao Processamento de Imagens de Sensoriamento Remoto</em>. 1ª Edição. Brasília, Distrito Federal: Universidade de Brasília.</p>
+</div>
+<div id="ref-mfilho">
+<p>O. MARQUES FILHO, H. VIEIRA NETO. 1999. <em>Processamento Digital de Imagens</em>. 1ª Edição. Rio de Janeiro, Rio de Janeiro: Brasport.</p>
+</div>
+<div id="ref-regalia">
+<p>P. A. REGALIA. 2005. “Review of Fundamentals of Adaptive Filtering” Vol. 25 (No. 4). IEEE Control Systems Magazine.</p>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="introducao.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="morfologia-matematica.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/02-Filtragem.Rmd",
+"text": "Edit"
+},
+"download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "";
+    if (src === "" || src === "true") src = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

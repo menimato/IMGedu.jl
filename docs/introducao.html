@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>IMGedu</title>
+  <meta name="description" content="Material de apoio aos usuário da biblioteca de processamento de imagens digitais orbitais, cujo objetivo principal é o auxílio no aprendizado das funções aqui contidas.">
+  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
+
+  <meta property="og:title" content="IMGedu" />
+  <meta property="og:type" content="book" />
+
+
+  <meta property="og:description" content="Material de apoio aos usuário da biblioteca de processamento de imagens digitais orbitais, cujo objetivo principal é o auxílio no aprendizado das funções aqui contidas." />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="IMGedu" />
+
+  <meta name="twitter:description" content="Material de apoio aos usuário da biblioteca de processamento de imagens digitais orbitais, cujo objetivo principal é o auxílio no aprendizado das funções aqui contidas." />
+
+
+<meta name="author" content="Bruno Menini Matosak, Nilcilene das Graças Medeiros">
+
+
+<meta name="date" content="2018-08-27">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+
+<link rel="prev" href="index.html">
+<link rel="next" href="filtragem.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">IMGedu</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Prefácio</a></li>
+<li class="chapter" data-level="1" data-path="introducao.html"><a href="introducao.html"><i class="fa fa-check"></i><b>1</b> Introdução</a><ul>
+<li class="chapter" data-level="1.1" data-path="introducao.html"><a href="introducao.html#imagem-digital"><i class="fa fa-check"></i><b>1.1</b> Imagem Digital</a></li>
+<li class="chapter" data-level="1.2" data-path="introducao.html"><a href="introducao.html#processamento-de-imagens-digitais-pdi"><i class="fa fa-check"></i><b>1.2</b> Processamento de Imagens Digitais (PDI)</a></li>
+<li class="chapter" data-level="1.3" data-path="introducao.html"><a href="introducao.html#julia-language"><i class="fa fa-check"></i><b>1.3</b> Julia Language</a></li>
+<li class="chapter" data-level="1.4" data-path="introducao.html"><a href="introducao.html#exercicios"><i class="fa fa-check"></i><b>1.4</b> Exercícios</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="filtragem.html"><a href="filtragem.html"><i class="fa fa-check"></i><b>2</b> Filtragem</a><ul>
+<li class="chapter" data-level="2.1" data-path="filtragem.html"><a href="filtragem.html#convolucao"><i class="fa fa-check"></i><b>2.1</b> Convolução</a></li>
+<li class="chapter" data-level="2.2" data-path="filtragem.html"><a href="filtragem.html#filtros-passa-baixa"><i class="fa fa-check"></i><b>2.2</b> Filtros Passa-Baixa</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="filtragem.html"><a href="filtragem.html#filtro-de-media"><i class="fa fa-check"></i><b>2.2.1</b> Filtro de Média</a></li>
+<li class="chapter" data-level="2.2.2" data-path="filtragem.html"><a href="filtragem.html#filtro-da-mediana"><i class="fa fa-check"></i><b>2.2.2</b> Filtro da Mediana</a></li>
+<li class="chapter" data-level="2.2.3" data-path="filtragem.html"><a href="filtragem.html#filtro-gaussiano"><i class="fa fa-check"></i><b>2.2.3</b> Filtro Gaussiano</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="filtragem.html"><a href="filtragem.html#filtros-passa-alta"><i class="fa fa-check"></i><b>2.3</b> Filtros Passa-Alta</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="filtragem.html"><a href="filtragem.html#operador-de-sobel"><i class="fa fa-check"></i><b>2.3.1</b> Operador de Sobel</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="filtragem.html"><a href="filtragem.html#filtragem-adaptativa"><i class="fa fa-check"></i><b>2.4</b> Filtragem Adaptativa</a><ul>
+<li class="chapter" data-level="2.4.1" data-path="filtragem.html"><a href="filtragem.html#filtro-gaussiano-adaptativo"><i class="fa fa-check"></i><b>2.4.1</b> Filtro Gaussiano Adaptativo</a></li>
+</ul></li>
+<li class="chapter" data-level="2.5" data-path="filtragem.html"><a href="filtragem.html#exercicios-1"><i class="fa fa-check"></i><b>2.5</b> Exercícios</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="morfologia-matematica.html"><a href="morfologia-matematica.html"><i class="fa fa-check"></i><b>3</b> Morfologia Matemática</a><ul>
+<li class="chapter" data-level="3.1" data-path="morfologia-matematica.html"><a href="morfologia-matematica.html#erosao"><i class="fa fa-check"></i><b>3.1</b> Erosão</a></li>
+<li class="chapter" data-level="3.2" data-path="morfologia-matematica.html"><a href="morfologia-matematica.html#dilatacao"><i class="fa fa-check"></i><b>3.2</b> Dilatação</a></li>
+<li class="chapter" data-level="3.3" data-path="morfologia-matematica.html"><a href="morfologia-matematica.html#gradiente-morfologico"><i class="fa fa-check"></i><b>3.3</b> Gradiente Morfológico</a></li>
+<li class="chapter" data-level="3.4" data-path="morfologia-matematica.html"><a href="morfologia-matematica.html#afinamento-morfologico"><i class="fa fa-check"></i><b>3.4</b> Afinamento Morfológico</a></li>
+<li class="chapter" data-level="3.5" data-path="morfologia-matematica.html"><a href="morfologia-matematica.html#exercicios-2"><i class="fa fa-check"></i><b>3.5</b> Exercícios</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="limiarizacao.html"><a href="limiarizacao.html"><i class="fa fa-check"></i><b>4</b> Limiarização</a><ul>
+<li class="chapter" data-level="4.1" data-path="limiarizacao.html"><a href="limiarizacao.html#limiarizacao-pela-mediana"><i class="fa fa-check"></i><b>4.1</b> Limiarização pela Mediana</a></li>
+<li class="chapter" data-level="4.2" data-path="limiarizacao.html"><a href="limiarizacao.html#limiarizacao-de-otsu"><i class="fa fa-check"></i><b>4.2</b> Limiarização de Otsu</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">IMGedu</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="introducao" class="section level1">
+<h1><span class="header-section-number">Capítulo 1</span> Introdução</h1>
+<style>
+body {
+text-align: justify}
+</style>
+<p>O Processamento Digital de Imagens (PDI) é uma atividade que vem sendo desenvolvida desde a criação da imagem digital em si. Sendo um ramo da computação, são aplicados diversos algoritmos para a extração informações ou subprodutos das imagens analisadas, de forma que todo o potencial destas possa ser utilizado. Diferentemente do Processamento Analógico de Imagens (PAI), os algorítimos empregados tendema ter baixo teor de subjetividade, o que garante uma maior independência de iterações humanas e por consequente uma menor taxa de erros inerentes a processos manuais.</p>
+<p>Uma grande vantagem do PDI é o menor tempo necessário em relação ao PAI para a execução de tarefas morosas, como a calibração das imagens, assim como a extração de feições - sendo a segunda uma tarefa altamente subjetiva. Uma das desvantagens do PDI, em relação ao processamento analógico, é a dificuldade de implementação de ferramentas capazes de realizar tarefas complexas feitas facilmente pela capacidade humana de reconhecer padrões e atribuir significados a eles. Felizmente, com o avanço no ramo da visão computacional, tais técnicas estão sendo melhoradas ao ponto de serem comparáveis às de um analista humano, apresentando resultados aceitáveis aliados à falta de subjetividade e rápido tempo de execução.</p>
+<p>Neste texto serão abordados os processos de filtragem de imagens digitais, morfologia matemática, limiarização, e detecção de bordas. Tais processos do PDI são largamente utilizados no âmbito das imagens orbitais para o pré-processamento e extração de feições. Para entender melhor como são implementados os algoritmos de PDI, é necessário antes entender a anatomia de uma imagem digital, o que é discutido no próximo tópico.</p>
+<div id="imagem-digital" class="section level2">
+<h2><span class="header-section-number">1.1</span> Imagem Digital</h2>
+<p>De acordo com <span class="citation">(R. C. GONZALEZ <a href="#ref-gonzalez">2010</a>)</span>, uma imagem pode ser definida como:</p>
+<table>
+<colgroup>
+<col width="100%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td align="center"><em>“Uma função bidimensional, <span class="math inline">\(f(x,y)\)</span>, em que <span class="math inline">\(x\)</span> e <span class="math inline">\(y\)</span> são coordenadas espaciais (plano), e a amplitude de <span class="math inline">\(f\)</span> em qualquer par de coordenadas <span class="math inline">\((x,y)\)</span> é chamada de intensidade ou nível de cinza da imagem nesse ponto.”</em> <span class="citation">(R. C. GONZALEZ <a href="#ref-gonzalez">2010</a>)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Gonzalez também diz que quando <span class="math inline">\(x\)</span> e <span class="math inline">\(y\)</span>, além dos valores de intensidade de <span class="math inline">\(f\)</span> são quantidades finitas e discretas, chama-se então a imagem de <em>imagem digital</em>. A grosso modo, pode-se definir uma imagem digital como o conjunto de dados matriciais, onde cada índice possui seu correspondente valor de nível de cinza, discretizado a partir de um modelo contínuo.</p>
+<p>O processo de discretização para a criação de uma imagem é descrito por <span class="citation">(A. E. SCURI <a href="#ref-scuri">2002</a>)</span> em 4 etapas diferentes: <em>Imagem Contínua</em>, <em>Amostragem</em>, <em>Quantização</em>, e <em>Codificação</em>.</p>
+<center>
+<div class="figure"><span id="fig:discret"></span>
+<img src="Imagens/discretizacao.png" alt="Passos para a dicretização de uma imagem de acordo com [@scuri]. (a) Imagem Contínua, (b) Amostragem, (c) Quantização, e (d) Codificação." width="80%" />
+<p class="caption">
+Figura 1.1: Passos para a dicretização de uma imagem de acordo com <span class="citation">(A. E. SCURI <a href="#ref-scuri">2002</a>)</span>. (a) Imagem Contínua, (b) Amostragem, (c) Quantização, e (d) Codificação.
+</p>
+</div>
+</center>
+<p>A Figura <a href="introducao.html#fig:discret">1.1</a> (a) representa a Imagem Contínua, formada pelos raios de luz que passam pelos sensores do aparelho obturador da imagem. Já (b) representa o Padrão de Amostragem de tal aparelho. Para captar todos os detalhes da Imagem Contínua, seriam necessárias infinitas divisões do sensor imageador, inviabilizando a construção destes. Desta forma, escolhe-se intervalos para a divisão, de forma a captar o máximo dos detalhes relevantes da cena. Em (c), que é a etapa de Quantização, ocorre a obtenção dos níveis de cinza correspondentes aos raios capturados pelo obturador, normalmente uma média daqueles que atingem cada célula a ser quantizada. Neste modelo, cada célula gera um pixel com um nível de cinza distinto para seu índice correspondente. Por fim em (d) há a Codificação dos níveis de cinza capturados, gerando assim um arquivo digital para a imagem. Este arquivo pode ser interpretado como uma matriz onde cada termo é o valor do nível de cinza correspondente à posição em que está armazenado.</p>
+<p>Pelo processo descrito anteriormente, tem-se como produto uma imagem em tons de cinza - para a criação de imagens coloridas faz-se normalmente a combinação de três imagens em tons de cinza, correspondentes à diferentes intervalos do espectro de cores. O mais comum é usar três diferentes componentes que captam a luz nos intervalos do vermelho, verde e azul (RGB) <span class="citation">(O. MARQUES FILHO <a href="#ref-mfilho">1999</a>)</span>.</p>
+<p>Sensores imageadores orbitais normalmente possuem câmeras multiespectrais, ou seja, conseguem adquirir imagens da superfície terrestre correspondentes a diferentes faixas do espectro de ondas eletromagnéticas, e não apenas da faixa do espectro visível. Realizando a combinação de imagens oriundas destas diferentes faixas além do visível, torna-se então possível a distinção de diferentes objetos que utilizando apenas o padrão RGB seriam de difícil diferenciação devido ao diferente comportamento espectral destes objetos, como por exemplo a distinção de gramíneas de vegetação de mata, ambas verdes no RGB.</p>
+</div>
+<div id="processamento-de-imagens-digitais-pdi" class="section level2">
+<h2><span class="header-section-number">1.2</span> Processamento de Imagens Digitais (PDI)</h2>
+<!-- melhorar isso daqui -->
+<p>O Processamento Digital de Imagens pode ser subdividido em 10 diferentes passos fundamentais <span class="citation">(R. C. GONZALEZ <a href="#ref-gonzalez">2010</a>)</span>: <em>Aquisição de Imagens</em>, <em>Filtragem e Realce de Imagens</em>, <em>Restauração de Imagens</em>, <em>Processamento de Imagens Coloridas</em>, <em>Wavelets e Processamento Multirresolução</em>, <em>Compressão</em>, <em>Processamento Morfológico</em>, <em>Segmentação</em>, <em>Representação e Descrição</em>, e <em>Reconhecimento de Objetos</em>. A Figura <a href="introducao.html#fig:passos-fund">1.2</a> retirada do livro <em>Processamento Digital de Imagens</em> <span class="citation">(R. C. GONZALEZ <a href="#ref-gonzalez">2010</a>)</span>, representa a relação destes passos com os resultados alcaçados por eles.</p>
+<center>
+<div class="figure"><span id="fig:passos-fund"></span>
+<img src="Imagens/PDI_Passos_Fundamentais.png" alt="Passos fundamentais do PDI, definidos por Gonzalez e Woods. Fonte: [@gonzalez]." width="70%" />
+<p class="caption">
+Figura 1.2: Passos fundamentais do PDI, definidos por Gonzalez e Woods. Fonte: <span class="citation">(R. C. GONZALEZ <a href="#ref-gonzalez">2010</a>)</span>.
+</p>
+</div>
+</center>
+<p>No âmbito das imagens orbitais todos estes passos são amplamente utilizados. Exemplos a serem dados podem ser as operações de filtragem empregadas para a remoção de ruídos das cenas, ou a compressão das fotografias, dada a grande área coberta pelo sensor aliada à necessidade de imagens com riqueza de detalhes.</p>
+</div>
+<div id="julia-language" class="section level2">
+<h2><span class="header-section-number">1.3</span> Julia Language</h2>
+<p>Os algoritmos empregados em PDI se tratam, por vezes, de operações algébricas, dada a natureza matricial das imagens digitais. Esta característica dos algoritmos, aliada ao quão grande a quantidade de dados em uma só cena orbital pode ser, torna necessária a utilização de máquinas computadoras com grande capacidade de processamento, assim como a escolha de uma linguagem de programação eficiente. Uma linguagem que vem se destacando quanto à eficiência na execução de diferentes tipos de algoritmos é a Julia, que ainda possui a vantagem de ser <em>open source</em>.</p>
+<p>Julia é uma linguagem de programação dinâmica de alto nível e de alta performance para computação numérica, e como dito anteriormente gratuita e open source. Apesar de ainda estar em sua versão beta (versão 0.6.2 em 02/01/2018), a linguagem já se mostra robusta e algumas vezes até mesmo mais rápida que C ou Python, referências em alta velocidade no ramo da programação. O sistema Julia disponibiliza um compilador sofisticado, execução paralela distribuída, acurácia numérica, e uma biblioteca extensiva de funções matemáticas <span class="citation">(JULIA <a href="#ref-julia">2018</a>)</span>. A Figura <a href="introducao.html#fig:julia-logo">1.3</a> traz a logo da linguagem de programação.</p>
+<center>
+<div class="figure"><span id="fig:julia-logo"></span>
+<img src="Imagens/julia-logo.png" alt="Logo oficial da linguagem de programação Julia. Fonte: [@julia]." width="40%" />
+<p class="caption">
+Figura 1.3: Logo oficial da linguagem de programação Julia. Fonte: <span class="citation">(JULIA <a href="#ref-julia">2018</a>)</span>.
+</p>
+</div>
+</center>
+<p>A linguagem de programação Julia e todo o seu ambiente de desenvolvimento foi visionada para ser uma linguagem completa <span class="citation">(J. BEZANSON <a href="#ref-bezanson2012">2012</a>)</span>:</p>
+<table>
+<colgroup>
+<col width="100%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td align="center"><em>“Nós queremos a velocidade do C com o dinamismo do Ruby. […] Nós queremos algo tão usável quanto o Python para programação geral, tão fácil para estatística quanto o R, tão natural para o processamento de strings quanto Perl, tão poderoso para álgebra linear como o MATLAB.”</em></td>
+</tr>
+</tbody>
+</table>
+<p>Desta forma, a linguagem Julia foi estabelecida para competir com outras opções disponíveis, tentando sempre manter uma vantagem na eficiência ao executar algoritmos. <span class="citation">(J BEZANSON <a href="#ref-bezanson2017">2017</a>)</span> realizaram testes para comparar os tempos de execução para diferentes algoritmos de processamento de dados em Julia e também em outras linguagens. A Figura <a href="introducao.html#fig:julia-graph">1.4</a> mostra o resultado do tempo de execução de alguns algoritmos implementados em diferentes linguagens de programação em comparação à Julia <span class="citation">(J BEZANSON <a href="#ref-bezanson2017">2017</a>)</span>.</p>
+<center>
+<div class="figure"><span id="fig:julia-graph"></span>
+<img src="Imagens/julia-graph.png" alt="Comparação do desempenho de várias linguagens de programação executando micro benchmarks simples. Tempo de execução relativo ao C (quanto menor, melhor. Tempo de execução em C = 1. Fonte: [@bezanson2017]." width="80%" />
+<p class="caption">
+Figura 1.4: Comparação do desempenho de várias linguagens de programação executando micro benchmarks simples. Tempo de execução relativo ao C (quanto menor, melhor. Tempo de execução em C = 1. Fonte: <span class="citation">(J BEZANSON <a href="#ref-bezanson2017">2017</a>)</span>.
+</p>
+</div>
+</center>
+<p>Como pode ser visto na Figura <a href="introducao.html#fig:julia-graph">1.4</a>, a linguagem de programação Julia possui um potencial superior às outras opções comparadas, o que aliado à facilidade e gratuidade da instalação de diferentes pacotes adicionais (semelhante ao R), a torna uma opção altamente atrativa para o processamento de imagens digitais orbitais.</p>
+</div>
+<div id="exercicios" class="section level2">
+<h2><span class="header-section-number">1.4</span> Exercícios</h2>
+<ol style="list-style-type: decimal">
+<li><p>Defina o que é PDI e quais suas aplicações.</p></li>
+<li><p>Quais as 4 etapas da aquisição de uma imagem? (descreva cada uma de acordo com o seu entendimento)</p></li>
+<li><p>Qual a diferença computacional entre imagens preto e branco para imagens coloridas?</p></li>
+<li><p>Uma imagem binária é composta apenas por pixels com valores iguais a 0 e 1. A que cor corresponde o 0 e a que cor corresponde o 1?</p></li>
+<li><p>Programas escritos na linguagem de programação Julia são compilados ou executados? Comente.</p></li>
+<li><p>Considere a seguinte tabela:</p></li>
+</ol>
+<table>
+<tbody>
+<tr class="odd">
+<td align="center">0.98</td>
+<td align="center">0.10</td>
+<td align="center">0.89</td>
+</tr>
+<tr class="even">
+<td align="center">0.03</td>
+<td align="center">0.91</td>
+<td align="center">0.11</td>
+</tr>
+<tr class="odd">
+<td align="center">0.78</td>
+<td align="center">0.00</td>
+<td align="center">0.99</td>
+</tr>
+</tbody>
+</table>
+<p>Considerando que o maior valor do pixel para uma imagem seja 1, e que o menor seja 0, qual letra do alfabeto é formada interpretando os valores da tabela como níveis de cinza?</p>
+<ol start="7" style="list-style-type: decimal">
+<li>Quais as vantagens do Processamento Digital de Imagens (PDI) com relação ao Processamento Analógico de Imagens (PAI)?</li>
+</ol>
+
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-gonzalez">
+<p>R. C. GONZALEZ, R. C. WOODS. 2010. <em>Processamento Digital de Imagens</em>. 3ª Edição. São Paulo, São Paulo: Pearson Prentice Hall.</p>
+</div>
+<div id="ref-scuri">
+<p>A. E. SCURI. 2002. <em>Fundamentos Da Imagem Digital</em>. 1ª Edição. Rio de Janeiro, Rio de Janeiro: Tecgraf/PUC-Rio.</p>
+</div>
+<div id="ref-mfilho">
+<p>O. MARQUES FILHO, H. VIEIRA NETO. 1999. <em>Processamento Digital de Imagens</em>. 1ª Edição. Rio de Janeiro, Rio de Janeiro: Brasport.</p>
+</div>
+<div id="ref-julia">
+<p>JULIA. 2018. <em>The Julia Language</em>. <a href="https://Julialang.org/" class="uri">https://Julialang.org/</a>.</p>
+</div>
+<div id="ref-bezanson2012">
+<p>J. BEZANSON, V. SHAH, S. KARPINSKI. 2012. “Why We Created Julia.” <a href="https://Julialang.org/blog/2012/02/why-we-created-Julia" class="uri">https://Julialang.org/blog/2012/02/why-we-created-Julia</a>.</p>
+</div>
+<div id="ref-bezanson2017">
+<p>J BEZANSON, V. SHAH, S. KARPINSKI. 2017. “Julia: A Fast Dynamic Language for Technical Computing” Vol. 59 (No. 1). Society for Industrial; Applied Mathematics.</p>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="filtragem.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/01-Introducao.Rmd",
+"text": "Edit"
+},
+"download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "";
+    if (src === "" || src === "true") src = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
